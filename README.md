@@ -14,16 +14,19 @@ idea.case.sensitive.fs=true
 ---
 # Operating System
 * Find all files more than 100M:
-
-```find / -xdev -type f -size +100M```
+```
+find / -xdev -type f -size +100M
+```
 
 * Sort folders by size:
-
-```sudo du max-depth=1 /home/ | sort -n -r```
+```
+sudo du max-depth=1 /home/ | sort -n -r
+```
 
 * Sort files by size and print size in human readable format:
-
-```ls -Slh```
+```
+ls -Slh
+```
 
 ---
 # AWS
