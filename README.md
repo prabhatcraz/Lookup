@@ -24,3 +24,12 @@ idea.case.sensitive.fs=true
 * Sort files by size and print size in human readable format:
 
 ```ls -Slh```
+
+---
+# AWS
+## Dyanmo
+```
+for table in $(aws dynamodb list-tables --region eu-west-1 | jq -c -r '.TableNames[]'); do
+  aws dynamodb describe-table --region eu-west-1  --table-name ${table}
+done
+```
