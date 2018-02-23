@@ -36,3 +36,18 @@ for table in $(aws dynamodb list-tables --region eu-west-1 | jq -c -r '.TableNam
   aws dynamodb describe-table --region eu-west-1  --table-name ${table}
 done
 ```
+
+---
+# Git
+##Git lol & lola
+Add the following to ~/.gitconfig
+```
+[alias]
+        lol = log --graph --decorate --pretty=oneline --abbrev-commit
+        lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
+[color]
+        branch = auto
+        diff = auto
+        interactive = auto
+        status = auto
+```
