@@ -1,7 +1,11 @@
 # Prabhat Ranjan
 ## Java
 ### Taking a heap dump
-```jmap -F -dump:format=b,file=/tmp/dump.hprof```
+```jmap -dump:format=b,file=/tmp/dump.hprof```
+
+Note: You might have to run it as the same user which is running the application. so the command may look like:
+
+```sudo sudo -u <app-user> jmap -dump:format=b,file=/tmp/dump.hprof```
 
 --- 
 ## Intellij
