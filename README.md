@@ -56,3 +56,11 @@ Add the following to ~/.gitconfig
         interactive = auto
         status = auto
 ```
+
+---
+## Mac
+### Display hidden files
+```
+defaults write com.apple.finder AppleShowAllFiles TRUE
+killall finder
+```
