@@ -71,3 +71,8 @@ killall finder
 ```
 curl -X PUT 'http://localhost:9200/user'
 ```
+
+### Index a document
+```
+curl -s -H "Content-type: application/json" -XPOST 'http://localhost:9200/onboarding/type' -d '{ "holderid":"123" }'
+```
