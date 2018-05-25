@@ -64,3 +64,10 @@ Add the following to ~/.gitconfig
 defaults write com.apple.finder AppleShowAllFiles TRUE
 killall finder
 ```
+
+---
+## ElasticSearch Cheat-sheet
+### Create an index
+```
+curl -X PUT 'http://localhost:9200/user'
+```
