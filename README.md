@@ -56,6 +56,11 @@ Add the following to ~/.gitconfig
         interactive = auto
         status = auto
 ```
+### Delete all branches other than master
+You must be master branch
+```
+git branch | cat | xargs git branch -d
+```
 
 ---
 ## Mac
