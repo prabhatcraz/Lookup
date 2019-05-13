@@ -1,0 +1,1 @@
+alias d_elk="sudo docker pull sebp/elk"
