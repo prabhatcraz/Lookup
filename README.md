@@ -7,6 +7,10 @@ Note: You might have to run it as the same user which is running the application
 
 ```sudo sudo -u <app-user> jmap -dump:format=b,file=/tmp/dump.hprof```
 
+---
+## Docker
+### Remove all untagged images
+```docker rmi $(docker images | grep "^<none>" | awk "{print $3}")```
 --- 
 ## Intellij
 ### Fix case sensitive volume == Edit idea.properties file
