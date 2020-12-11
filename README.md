@@ -1,4 +1,13 @@
 # Prabhat Ranjan
+## Gitlab Setup
+### install latest gitlab-runner on ubuntu 
+```
+apt-get remove gitlab-runner (optional)
+curl -L https://packages.gitlab.com/install/repositories/runner/gitlab-runner/script.deb.sh | sudo bash
+apt-get install gitlab-runner
+```
+source - https://gitlab.com/gitlab-org/gitlab-runner/-/issues/4773
+
 ## Java
 ### Taking a heap dump
 ```jmap -dump:format=b,file=/tmp/dump.hprof```
